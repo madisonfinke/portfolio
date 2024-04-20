@@ -1,0 +1,133 @@
+
+body{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: 200;
+margin: 2rem;
+color: #42240E;
+background-color:tan;
+}
+img{
+max-width:100%;
+}
+header{
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+border-bottom: .5rem solid #42240E;
+border-style: dotted;
+}
+header img{
+width: 4rem;
+display:block;
+}
+nav>a{
+color: #5B422F;
+border-bottom: .5px solid #42240E;
+text-decoration: none;
+margin: .5rem;
+transition: all .2s ease-in-out;
+}
+nav>a:hover{
+color: #5B422F;
+border-bottom-color: #5B422F;
+}
+section{
+padding: 1rem 1rem;
+}
+.about-me{
+color:#42240E;
+}
+footer{
+background-color: beige;
+padding: 1rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: .5rem;
+}
+.email{
+flex-basis: 100%; 
+}
+.email img{
+width: 3rem;
+margin: .25rem;
+}
+.phone{
+flex-basis: 100%;
+}
+.phone img{
+    width: 3rem;
+    margin: .25rem;
+}
+.social{
+flex-basis: 100%;
+}
+.social img{
+    width: 3rem;
+    margin: .25rem;
+}
+
+.photos{
+    position: relative;
+    width: calc(100% - 4rem);
+    max-width: 100%;
+    height: calc(100vw / 1.778);
+    }
+
+.photos .slide{
+display: flex;
+position: absolute;
+top: 0;
+left: 0;
+margin-top: 1rem;
+}
+
+.photos{
+overflow: hidden;
+}
+
+.photos .slide{
+overflow: hidden;
+}
+
+.arrow{
+    position: absolute;
+    font-size: 3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+    cursor: pointer;
+    z-index: 1;
+    top: calc(50% - 1.5rem);
+    }
+
+.left{
+left: .5rem;
+}
+
+.right{
+right: .5rem;
+}
+
+.photos img{
+max-width: 100.025vw;
+height: calc(100.25vw / 1.778);
+}
+
+@media (min-width: 1000px){
+    .gallery img{
+    max-width: 50vw;
+    height: calc(50vw / 1.778);
+    }
+    .gallery{
+    height: calc(50vw / 1.778);
+    }
+   iframe{
+    width: calc(100% - 4rem);
+    max-width: 100%;
+    height: calc(100vw / 1.778);
+    position:relative;
+   }
+}
+
